@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="image2.png" type="image/x-icon"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="calculator.css" />
+</head>
+
+<body>
+ <script defer src="function.js"></script>
+   <h1><center>Online Calculator</center></h1> <br><br>
+   <div class="info">
+    <h2>About</h2>
+   <p>This is a simple online calculator with a bit of uniqueness to it. It allows you to perform basic arithmetic calculations like addition, subtraction, multiplication, and division. The calculator also includes a feature specific to Jamaica called GCT (General Consumption Tax) calculation.</p>
+    
+   </div>
+    <div class="calculator"> 
+        <form name="input" id="input" class="input">
+                  <table>
+                    <input type="text" id="txt2" name="input"/>
+                    <tr>
+                      <td><input type="reset" id="clearBtn" value="AC"  onclick="input.value+= ' ' "/></td>
+                      <td><input type="button" id="additionBtn" value="+" onclick="input.value+='+' "/></td> 
+                      <td><input type="button" id="subtractBtn" value="-" onclick="input.value+='-' "/></td> 
+                      <td><input type="button" id="multiplyBtn" value="*" onclick="input.value+='*' "/></td>
+                    </tr>
+                    <tr>
+                      <td><input type="button" id="oneBtn" value="1" onclick="input.value+= '1' "/></td>
+                      <td><input type="button" id="twoBtn" value="2" onclick="input.value+= '2' "/></td>
+                      <td><input type="button" id="threeBtn" value="3" onclick="input.value+= '3' "/></td>
+                      <td><input type="button" id="divideBtn" value="/" onclick="input.value+='/' "/></td>
+                     
+                    </tr>
+                    <tr>
+                      <td><input type="button" id="fourBtn" value="4" onclick="input.value+= '4' "/></td>
+                      <td><input type="button" id="fiveBtn" value="5" onclick="input.value+='5' "/></td>
+                      <td><input type="button" id="sixBtn" value="6" onclick="input.value+='6' "/></td>
+                      <td><input type="button" id="decimalBtn" value="." onclick="input.value+='.' "/></td>
+                    </tr>
+                    <tr>
+                      <td><input type="button" id="sevenBtn" value="7" onclick="input.value+= '7' "/></td>
+                      <td><input type="button" id="eightBtn" value="8" onclick="input.value+='8' "/></td>
+                      <td><input type="button" id="nineBtn" value="9"onclick="input.value+= '9' "/></td>
+                      <td><input type="button" id="zeroBtn" value="0"onclick="input.value+='0'"/></td>
+                    </tr>
+                    <tr >
+                      <td><input type="button" id="equalBtn" value="=" onclick= "input.value=eval(input.value)"/></td>
+                      <td><input type="button" id="gctBtn" value="GCT" onclick="calculateGCT()"/></td>
+                    </tr>
+                  </table>
+                </form>
+               
+    </div><br><br>
+    <video autoplay muted loop id="myVideo">
+        <source src="vid1.mov">
+      </video>
+
+</body>
